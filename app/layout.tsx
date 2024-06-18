@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <div className="pt-32 min-h-screen lg:pt-36 2xl:pt-44 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl">
                         {children}
                     </div>
+                    {/* <Footer/> */}
                 </ThemeProvider>
             </body>
         </html>
