@@ -11,7 +11,7 @@ export function ModeToggle() {
 
     return (
         <Button variant={"ghost"} onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            {theme === "dark" ? <MoonIcon />  : <SunIcon />}
+            {theme === "dark" ? <SunIcon /> : <MoonIcon /> }
         </Button>
     );
 }
